@@ -6,18 +6,14 @@
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
 - [Set Up](#set-up)
-  - [Prerequisitos](#prerequisitos)
-  - [Instalación](#instalación)
 - [Uso](#uso)
 - [Componentes](#componentes)
 - [Pruebas Realizadas y Resultados](#pruebas-realizadas-y-resultados)
-- [Construido con](#construido-con)
 - [Autores](#autores)
-- [Agradecimientos](#agradecimientos)
 
 ## 🧐 Acerca del Proyecto <a name="acerca-del-proyecto"></a>
 
-Este proyecto es una aplicación web desarrollada con Flask que demuestra el despliegue de contenedores multi-entorno utilizando Docker. La aplicación se conecta a una base de datos PostgreSQL y utiliza Redis como sistema de caché. El objetivo es practicar y mostrar cómo configurar y ejecutar una aplicación en entornos de desarrollo y producción, asegurando la correcta interacción entre los servicios.
+Este proyecto es una práctica de la asignatura Redes Avanzadas que consiste en una aplicación web que muestra el despliegue de contenedores multi-entorno utilizando Docker. La aplicación se conecta a una base de datos PostgreSQL y utiliza Redis como sistema de caché. El objetivo es practicar y mostrar cómo configurar y ejecutar una aplicación en entornos de desarrollo y producción, asegurando la correcta interacción entre los servicios.
 
 ## 🏁 Set Up <a name="set-up"></a>
 
@@ -67,18 +63,18 @@ Descarga [Docker Desktop](https://www.docker.com/)
    - **Entorno de Desarrollo:**
 
      ```bash
-     docker-compose -f docker-compose.dev.yml up --build
+     docker-compose up --build
      ```
 
    - **Entorno de Producción:**
 
      ```bash
-     docker-compose up --build
+     docker-compose -f docker-compose.prod.yml up --build
      ```
 
 3. **Configura la base de datos:**
 
-Conéctate al contenedor de PostgreSQL y crea la tabla necesaria:
+Conéctate al contenedor de PostgreSQL:
 
 ```bash
  psql -h localhost -p 5432 -U edu -d usuarios
@@ -86,7 +82,7 @@ Conéctate al contenedor de PostgreSQL y crea la tabla necesaria:
 
 Ingresa la contraseña 0000 cuando se te solicite.
 
-En el prompt de psql, ejecuta:
+Crea la tabla necesaria en el prompt de psql:
 
 ```sql
  CREATE TABLE usuarios (
@@ -119,7 +115,7 @@ Establece un mensaje:
 
 ## 🎈 Uso <a name="uso"></a>
 
-Una vez que los contenedores estén en funcionamiento, puedes acceder a la aplicación web desde tu navegador en http://localhost:5000.
+Una vez que los contenedores estén en funcionamiento, puedes acceder a la aplicación web desde tu navegador en http://localhost:5000
 
 La aplicación muestra:
 
@@ -130,9 +126,10 @@ La aplicación muestra:
 
 ## 📂 Componentes <a name="componentes"></a>
 
-- Aplicación Flask (app.py): Aplicación web que maneja las rutas y la lógica .
+- Aplicación Flask (app.py): Aplicación web que maneja las rutas y la lógica.
+- index.html: Estructura básica del HTML.
 - Base de Datos PostgreSQL: Almacena los datos de la aplicación.
-- Redis: Sistema de caché utilizado para almacenar datos temporales.
+- Redis: Sistema de caché que almacena datos temporales.
 - Docker: Utilizado para contenerizar la aplicación y sus servicios.
 - Docker Compose: Orquesta los diferentes contenedores y configura las redes y volúmenes necesarios.
 
@@ -159,19 +156,6 @@ La aplicación muestra:
 - Resultado Esperado: Los nuevos valores aparecen en la sección correspondiente de la aplicación.
 - Resultado Obtenido: Los datos se muestran correctamente en la aplicación.
 
-## ⛏️ Construido con <a name="construido-con"></a>
-
-- Flask - Microframework web
-- PostgreSQL - Base de datos relacional
-- Redis - Sistema de caché en memoria
-- Docker - Contenedores
-- Docker Compose - Orquestación de contenedores
-- Gunicorn - Servidor WSGI para aplicaciones Python
-
 ## ✍️ Autores <a name="autores"></a>
 
 Eduardo Bonnín Narváez - [GitHub](https://github.com/edubonnin)
-
-## 🎉 Agradecimientos <a name="agradecimientos"></a>
-
-A la comunidad de código abierto por su apoyo y contribuciones.
