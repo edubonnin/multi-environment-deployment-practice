@@ -45,7 +45,9 @@ Cliente de Redis (redis-cli): Para interactuar con Redis.
 
 En primer lugar, se asume que se tiene el gestor de paquetes Homebrew instalado, en caso contrario, instalarlo mediante el siguiente comando:
 
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 **Instalar Docker Desktop:**
 
