@@ -156,6 +156,23 @@ La aplicación muestra:
 - Resultado Esperado: Los nuevos valores aparecen en la sección correspondiente de la aplicación.
 - Resultado Obtenido: Los datos se muestran correctamente en la aplicación.
 
+### Prueba de Persistencia de los Datos de la Base de Datos
+
+- Descripción: Verificar que los datos almacenados en la base de datos persisten incluso después de reiniciar los contenedores de Docker, gracias al uso de volúmenes.
+- Procedimiento:
+  1. Confirmar que existen registros en la tabla `usuarios`. Si es necesario, insertar un nuevo registro.
+  2. Detener los contenedores de Docker:
+     ```bash
+     docker-compose down
+     ```
+  3. Reiniciar los contenedores de Docker:
+     ```bash
+     docker-compose up --build
+     ```
+  4. Acceder nuevamente a la aplicación web en `http://localhost:5000` y verificar que los datos previamente insertados siguen presentes.
+- Resultado Esperado: Los datos deben persistir y ser visibles en la aplicación web después del reinicio de los contenedores.
+- Resultado Obtenido: Los datos permanecen en la base de datos y se muestran correctamente en la aplicación, confirmando que la persistencia funciona correctamente.
+
 ## ✍️ Autores <a name="autores"></a>
 
 Eduardo Bonnín Narváez - [GitHub](https://github.com/edubonnin)
