@@ -5,7 +5,7 @@
 ## 📝 Índice
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
-- [Setup](#setup)
+- [Set Up](#set-up)
   - [Prerequisitos](#prerequisitos)
   - [Instalación](#instalación)
 - [Uso](#uso)
@@ -19,11 +19,9 @@
 
 Este proyecto es una aplicación web desarrollada con Flask que demuestra el despliegue de contenedores multi-entorno utilizando Docker. La aplicación se conecta a una base de datos PostgreSQL y utiliza Redis como sistema de caché. El objetivo es practicar y mostrar cómo configurar y ejecutar una aplicación en entornos de desarrollo y producción, asegurando la correcta interacción entre los servicios.
 
-## 🏁 Setup <a name="setup"></a>
+## 🏁 Set Up <a name="set-up"></a>
 
 ### Prerequisitos
-
-Asegúrate de tener instalados los siguientes componentes en tu sistema:
 
 - Docker: Para crear y administrar contenedores.
 - Docker Compose: Para orquestar los contenedores de Docker.
@@ -60,7 +58,7 @@ Descarga [Docker Desktop](https://www.docker.com/)
 1. **Clona este repositorio:**
 
 ```bash
- git clone https://github.com/tu_usuario/tu_repositorio.git
+ git clone https://github.com/edubonnin/multi-environment-deployment-practice.git
  cd tu_repositorio
 ```
 
@@ -125,14 +123,14 @@ Una vez que los contenedores estén en funcionamiento, puedes acceder a la aplic
 
 La aplicación muestra:
 
-- Estado de la conexión a la base de datos.
-- Estado de la conexión a Redis.
-- Datos almacenados en la tabla usuarios.
-- Mensaje obtenido desde Redis.
+- Estado de la conexión a la base de datos
+- Estado de la conexión a Redis
+- Datos almacenados en la tabla usuarios
+- Mensaje obtenido desde Redis
 
 ## 📂 Componentes <a name="componentes"></a>
 
-- Aplicación Flask (app.py): Aplicación web que maneja las rutas y la lógica 
+- Aplicación Flask (app.py): Aplicación web que maneja las rutas y la lógica .
 - Base de Datos PostgreSQL: Almacena los datos de la aplicación.
 - Redis: Sistema de caché utilizado para almacenar datos temporales.
 - Docker: Utilizado para contenerizar la aplicación y sus servicios.
@@ -172,8 +170,8 @@ La aplicación muestra:
 
 ## ✍️ Autores <a name="autores"></a>
 
-- Eduardo Bonnín Narváez - [GitHub](https://github.com/edubonnin)
+Eduardo Bonnín Narváez - [GitHub](https://github.com/edubonnin)
 
 ## 🎉 Agradecimientos <a name="agradecimientos"></a>
 
-- A la comunidad de código abierto por su apoyo y contribuciones.
+A la comunidad de código abierto por su apoyo y contribuciones.
