@@ -1,114 +1,53 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
-
-<h3 align="center">Project Title</h3>
+# Proyecto de Despliegue de Contenedores Multi-Entorno con Flask y PostgreSQL
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Estado](https://img.shields.io/badge/estado-activo-success.svg)]()
+[![Licencia](https://img.shields.io/badge/licencia-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
+## 📝 Tabla de Contenidos
 
-## 📝 Table of Contents
+- [Acerca del Proyecto](#acerca-del-proyecto)
+- [Comenzando](#comenzando)
+  - [Prerequisitos](#prerequisitos)
+  - [Instalación](#instalación)
+- [Uso](#uso)
+- [Despliegue](#despliegue)
+- [Componentes del Proyecto y Arquitectura](#componentes-del-proyecto-y-arquitectura)
+- [Pruebas Realizadas y Resultados](#pruebas-realizadas-y-resultados)
+- [Construido con](#construido-con)
+- [Autores](#autores)
+- [Agradecimientos](#agradecimientos)
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+## 🧐 Acerca del Proyecto <a name = "acerca-del-proyecto"></a>
 
-## 🧐 About <a name = "about"></a>
+Este proyecto es una aplicación web desarrollada con Flask que demuestra el despliegue de contenedores multi-entorno utilizando Docker. La aplicación se conecta a una base de datos PostgreSQL y utiliza Redis como sistema de caché. El objetivo es practicar y mostrar cómo configurar y ejecutar una aplicación en entornos de desarrollo y producción, asegurando la correcta interacción entre los servicios.
 
-Write about 1-2 paragraphs describing the purpose of your project.
+## 🏁 Comenzando <a name = "comenzando"></a>
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+Estas instrucciones te guiarán para obtener una copia del proyecto y ejecutarlo en tu máquina local para propósitos de desarrollo y pruebas.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+### Prerequisitos
 
-### Prerequisites
+Asegúrate de tener instalados los siguientes componentes en tu sistema:
 
-What things you need to install the software and how to install them.
+- **Docker**: Para crear y administrar contenedores.
+- **Docker Compose**: Para orquestar los contenedores de Docker.
+- **Python 3.8 o superior**: Para ejecutar scripts si es necesario.
+- **Cliente de PostgreSQL (`psql`)**: Para interactuar con la base de datos.
+- **Cliente de Redis (`redis-cli`)**: Para interactuar con Redis.
 
-```
-Give examples
-```
+#### Instalación de Prerequisitos en Mac
 
-### Installing
+**Instalar Docker Desktop:**
 
-A step by step series of examples that tell you how to get a development env running.
+Descarga e instala Docker Desktop para Mac desde [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
-Say what the step will be
+**Instalar Cliente de PostgreSQL:**
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+```bash
+brew install postgresql
