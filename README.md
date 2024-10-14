@@ -97,6 +97,7 @@ Crea la tabla necesaria en el prompt de psql:
 
 ```sql
  INSERT INTO usuarios (nombre, email, contraseña) VALUES ('Juan Pérez', 'juan.perez@example.com', 'password123');
+ INSERT INTO usuarios (nombre, email, contraseña) VALUES ('Ana Gómez', 'ana.gomez@example.com', 'contraseña456');
 ```
 
 5. **Establece mensajes en Redis:**
